@@ -7,10 +7,30 @@
     </head>
     <body>
         <div class="wrapper">
-            <h1> Front Page Testing Video</h1>
-            <video>
-                
+            <h1> Testing YouTube Video</h1>
+            <video autoplay controls>
+                <!-- This is for the thumbnail pic if u hv one 
+                    poster="posterimage.jpg"-->
+                <source src="downloads/video/Sincerely.mp4" type="video/mp4">
+                    Your browser does not support mp4 video, plz change the browser
             </video>
+            <!-- video ratio is 16:9 -->
+            <!-- why inside a <div>? more details regarding with video -->
+            <div class="diviframe">
+            <iframe src="https://www.youtube.com/embed/9TktpJyH58I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <h1> Vimeo testing</h1>
+        <p> 
+            <ul>
+                <li>Inside Vimeo video > Press share </li>
+                <li>Under Embed > More option (if you want to make any changes there, but cannot remove who make the video thing from Vimeo)</li>
+                <li>Copy the embed iframe tag</li>
+            </ul>
+        </p>
+        <div class="vimeoTest">
+            <iframe src="https://player.vimeo.com/video/504070086" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <p><a href="https://vimeo.com/504070086">Sincerely</a> from <a href="https://vimeo.com/user43642171">zin</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        </div>
         </div>
     </body>
 </html>

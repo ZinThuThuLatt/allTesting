@@ -5,5 +5,35 @@
 
 .wrapper {
     margin: 0 auto;
-    width: 1000px;
+    width: 80%; /* if width: 1000px; the website is not going to be responsive */
+}
+
+video {
+    width: 100%; /* make the vid fill inside the container and not the page */
+}
+
+.diviframe {
+    position: relative; /* relative is measure from the margin */
+    left: 100px;
+    padding-bottom: 56.25%; /* according to 16:9 ratio of a video */
+    padding-top: 25px;
+    height: 0px;
+}
+
+.diviframe iframe {
+    position: absolute; /* absolute is measure from the vid container */
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.vimeoTest{
+    position: relative;
+    left: 100px;
+    padding-bottom: 56.25%; /* according to 16:9 ratio of a video */
+    padding-top: 25px;
+    height: 0px;
 }
