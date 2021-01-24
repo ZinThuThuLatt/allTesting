@@ -5,7 +5,7 @@
 
 .wrapper {
     margin: 0 auto;
-    width: 80%; /* if width: 1000px; the website is not going to be responsive */
+    width: 100%; /* if width: 1000px; the website is not going to be responsive */
 }
 
 video {
@@ -36,4 +36,117 @@ video {
     padding-bottom: 56.25%; /* according to 16:9 ratio of a video */
     padding-top: 25px;
     height: 0px;
+}
+/* testing Responsive website */
+/* .wrapper */
+.imageDiv{
+    width: 100%;
+}
+
+/* img-banner */
+.imageImg {
+    display: none;
+}
+
+/* img-info */
+.imageArticle {
+    width:100%;
+}
+
+/* img-info h2 */
+.imageArticle h2 {
+    padding: 30px 30px 20px;
+    font-family: arial;
+    font-size: 50px;
+    color: #111;
+    line-height: 44px;
+}
+
+/* img-info p */
+.imageArticle p {
+    padding: 0px 30px 20px;
+    font-family: arial;
+    font-size: 16px;
+    color: #111;
+    line-height: 24px;
+}
+
+/* img-me */
+.imageImg2 {
+    width: 100%;
+}
+
+/* for Tablet responsive */
+@media only screen and (min-width: 768px) {
+    /* img-banner */
+    .imageImg {
+        display: block;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .imageDiv {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    /* img-info h2 */
+    .imageArticle h2 {
+        padding: 20px 0px 0px;
+    }
+
+    /* img-info p */
+    .imageArticle p {
+        padding: 20px 0px 0px;
+    }
+
+    /* img-me */
+    .imageImg2 {
+        padding-top: 30px;
+    }
+
+    /* for Laptop responsive */
+@media only screen and (min-width: 1000px) {
+    /* img-banner */
+    .imageImg {
+        display: block;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .imageDiv {
+        width: 1000px;
+    }
+
+    /* img-info */
+    .imageArticle {
+        width: 50%;
+        float: right;
+    }
+    /* img-info h2 */
+    .imageArticle h2 {
+        padding: 20px 0px 0px;
+    }
+
+    /* img-info p */
+    .imageArticle p {
+        padding: 20px 0px 0px 30px;
+    }
+
+    /* img-info h2 */
+    .imageArticle h2 {
+        padding: 20px 0px 0px 30px;
+    }
+
+    /* img-info p */
+    .imageArticle p {
+        padding: 20px 0px 0px;
+    }
+
+    /* img-me */
+    .imageImg2 {
+        padding-top: 0px;
+        width: 50%;
+        float: left;
+    }
 }
